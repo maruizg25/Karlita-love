@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0a1e" />
+
+    <title>Girasoles para Tina 🌻</title>
+    <meta
+      name="description"
+      content="Hoy es 21 de septiembre y no encontré flores amarillas suficientes, así que te sembré un campo entero."
+    />
+
+    <!-- Vista previa al compartir el enlace por WhatsApp o redes -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Girasoles para Tina 🌻" />
+    <meta
+      property="og:description"
+      content="Un campo entero de girasoles que florece cada vez que abres este enlace."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌻</text></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="escena--semilla">
+    <!-- ── Degradados compartidos por las 46 flores ──────────────────
+         Definirlos una sola vez y referenciarlos por id ahorra decenas de
+         nodos por flor y mantiene el centro de todas igual de bonito. -->
+    <svg class="defs" aria-hidden="true" focusable="false">
+      <defs>
+        <radialGradient id="disco" cx="40%" cy="34%" r="76%">
+          <stop offset="0" stop-color="#7d4418" />
+          <stop offset="0.42" stop-color="#4a2510" />
+          <stop offset="0.86" stop-color="#2a1409" />
+          <stop offset="1" stop-color="#40230f" />
+        </radialGradient>
+        <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#ffe9a3" stop-opacity="0.85" />
+          <stop offset="0.45" stop-color="#ffc861" stop-opacity="0.35" />
+          <stop offset="1" stop-color="#ffc861" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+    </svg>
+
+    <!-- ── El cielo: de noche cerrada a pleno amanecer ───────────────── -->
+    <div class="cielo" aria-hidden="true">
+      <span class="cielo__estrellas"></span>
+      <span class="cielo__estrellas cielo__estrellas--finas"></span>
+      <div class="sol">
+        <span class="sol__rayos"></span>
+        <span class="sol__halo"></span>
+        <button class="sol__nucleo" type="button" data-accion="atardecer" aria-label="Cambiar la luz del cielo"></button>
+      </div>
+      <span class="cielo__bruma cielo__bruma--alta"></span>
+      <span class="cielo__bruma cielo__bruma--baja"></span>
+    </div>
+
+    <!-- ── Las colinas del fondo, tres planos de profundidad ─────────── -->
+    <div class="colinas" aria-hidden="true">
+      <span class="colina colina--3"></span>
+      <span class="colina colina--2"></span>
+      <span class="colina colina--1"></span>
+    </div>
+
+    <!-- ── El campo. Cada capa se llena desde field.ts ───────────────── -->
+    <main class="campo">
+      <h1 class="visually-hidden">Girasoles para Tina</h1>
+      <div class="campo__capa campo__capa--fondo" data-capa="fondo"></div>
+      <div class="campo__capa campo__capa--medio" data-capa="medio"></div>
+      <div class="campo__capa campo__capa--frente" data-capa="frente"></div>
+    </main>
+
+    <span class="tierra" aria-hidden="true"></span>
+
+    <!-- ── Polen, luciérnagas y la lluvia de pétalos final ───────────── -->
+    <canvas class="particulas" aria-hidden="true"></canvas>
+
+    <!-- ── Pantalla uno: la semilla ──────────────────────────────────── -->
+    <section class="semilla" data-pantalla="semilla">
+      <span class="semilla__brote" aria-hidden="true"></span>
+      <p class="semilla__fecha"></p>
+      <h2 class="semilla__titulo"></h2>
+      <p class="semilla__linea"></p>
+      <button class="boton boton--luz semilla__boton" type="button" data-accion="empezar"></button>
+      <p class="semilla__pista"></p>
+    </section>
+
+    <!-- ── Frases que acompañan el amanecer ──────────────────────────── -->
+    <p class="susurro" data-pantalla="susurro" aria-live="polite"></p>
+
+    <!-- ── Barra del jardín ──────────────────────────────────────────── -->
+    <header class="titular" data-pantalla="titular">
+      <h2 class="titular__texto"></h2>
+      <p class="titular__pista"></p>
+    </header>
+
+    <nav class="hud" data-pantalla="hud" aria-label="Controles del jardín">
+      <p class="hud__cancion"></p>
+      <button class="boton boton--suave" type="button" data-accion="musica" aria-pressed="false">
+        <span class="boton__icono" aria-hidden="true"></span>
+        <span class="boton__texto"></span>
+      </button>
+      <button class="boton boton--luz" type="button" data-accion="carta"></button>
+    </nav>
+
+    <!-- ── Visor de recuerdos (se arma desde gallery.ts) ─────────────── -->
+    <div class="visor" data-pantalla="visor" inert></div>
+
+    <!-- ── La carta ──────────────────────────────────────────────────── -->
+    <div class="carta" data-pantalla="carta" inert>
+      <article class="carta__hoja" role="dialog" aria-modal="true" aria-label="Una carta">
+        <button class="carta__cerrar" type="button" data-accion="cerrar-carta" aria-label="Cerrar la carta">&times;</button>
+        <h3 class="carta__encabezado"></h3>
+        <div class="carta__cuerpo"></div>
+        <p class="carta__firma"></p>
+        <button class="boton boton--suave carta__boton" type="button" data-accion="cerrar-carta"></button>
+      </article>
+    </div>
+
+    <!-- ── El final ──────────────────────────────────────────────────── -->
+    <section class="final" data-pantalla="final" inert>
+      <h2 class="final__titulo"></h2>
+      <p class="final__linea"></p>
+      <button class="boton boton--suave" type="button" data-accion="volver"></button>
+    </section>
+
+    <audio class="cancion" preload="auto" loop>
+      <source src="audio/cancion.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
