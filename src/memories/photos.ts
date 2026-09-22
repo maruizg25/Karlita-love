@@ -22,7 +22,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3523.jpg",
     titulo: "Nuestra ciudad",
     dedicatoria:
-      "Nuestra caminata, tú haciendo la señal de la paz y yo con esa cara de que no me cabía la felicidad en los lentes. Así se ve caminar contigo.",
+      "Nuestra caminata, usted haciendo la señal de la paz y yo con esa cara de que no me cabía la felicidad en los lentes. Así se ve caminar con usted.",
     alt: "Los dos sonriendo en una calle del centro histórico de Quito",
     fecha: "centro histórico, Quito",
   },
@@ -31,7 +31,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3557.jpg",
     titulo: "La misma calle, otra luz",
     dedicatoria:
-      "Se hizo de noche y seguíamos ahí. Contigo las calles no se acaban: se recorren dos veces.",
+      "Se hizo de noche y seguíamos ahí. Con usted las calles no se acaban: se recorren dos veces.",
     alt: "Los dos en la misma calle de Quito al anochecer",
     fecha: "centro histórico, Quito",
   },
@@ -40,7 +40,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3562.jpg",
     titulo: "A mitad de la calle",
     dedicatoria:
-      "No importaba quién pasara. Cuando estás cerca, se me olvida que hay más gente en el mundo.",
+      "No importaba quién pasara. Cuando está cerca, se me olvida que hay más gente en el mundo.",
     alt: "Los dos dándose un beso en una calle del centro de Quito",
   },
   {
@@ -48,7 +48,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3043.jpg",
     titulo: "Bajo las luces",
     dedicatoria:
-      "Todo el mundo miraba las luces del teleférico haha y yo solo tenía ojos para ti. Así empiezan las noches que uno no olvida.",
+      "Todo el mundo miraba las luces del teleférico haha y yo solo tenía ojos para usted. Así empiezan las noches que uno no olvida.",
     alt: "Beso de noche frente al panecillo",
   },
   {
@@ -56,7 +56,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3428.jpg",
     titulo: "Sal y sol",
     dedicatoria:
-      "El mar de fondo, tus lentes de estrella de cine, y yo robándote un beso en la mejilla. La playa era lo de menos.",
+      "El mar de fondo, sus lentes de estrella de cine, y yo robándole un beso en la mejilla. La playa era lo de menos.",
     alt: "Él besando su mejilla en la playa, ambos con lentes de sol",
     fecha: "Tonsupa",
   },
@@ -65,7 +65,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3478.jpg",
     titulo: "Tarde sin apuro",
     dedicatoria:
-      "Techo de caña, pulseras de hotel y nada que hacer más que estar. Mi tipo favorito de plan: ninguno, contigo.",
+      "Techo de caña, pulseras de hotel y nada que hacer más que estar. Mi tipo favorito de plan: ninguno, con usted.",
     alt: "Los mejores batidos de coco",
   },
   {
@@ -89,7 +89,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3464.jpg",
     titulo: "Y otra vez",
     dedicatoria:
-      "Porque la primera no nos convenció. Contigo siempre hay una segunda toma.",
+      "Porque la primera no nos convenció. Con usted siempre hay una segunda toma.",
     alt: "Segunda foto de los dos reflejados en el mismo espejo",
   },
   {
@@ -103,9 +103,9 @@ export const memories: readonly Memory[] = [
   {
     id: "muecas",
     src: "fotos/img_3709.jpg",
-    titulo: "Tú riéndote de mí",
+    titulo: "Usted riéndose de mí",
     dedicatoria:
-      "Yo haciendo el ridículo y tú riéndote conmigo. Esa risa tuya es mi cosa favorita de este mundo.",
+      "Yo haciendo el ridículo y usted riéndose conmigo. Esa risa suya es mi cosa favorita de este mundo.",
     alt: "Él sacando la lengua con gorra y ella riéndose a su lado",
   },
   {
@@ -113,14 +113,14 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_4549.jpg",
     titulo: "Paz, amor y lengua afuera",
     dedicatoria:
-      "Tú tranquila atrás, con tu gorrita, aguantándome. Gracias por aguantarme siempre.",
+      "Usted tranquila atrás, con su gorrita, aguantándome. Gracias por aguantarme siempre.",
     alt: "Selfie de los dos al aire libre, él haciendo la señal de la paz",
   },
   {
     id: "beso-en-el-restaurante",
     src: "fotos/img_3656.jpg",
     titulo: "Un beso entre plato y plato",
-    dedicatoria: "Lo mejor de salir a comer contigo nunca ha sido la comida.",
+    dedicatoria: "Lo mejor de salir a comer con usted nunca ha sido la comida.",
     alt: "Ella besando su mejilla en un restaurante con techo de madera",
   },
   {
@@ -128,7 +128,7 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_3661.jpg",
     titulo: "Agua caliente, noche fría",
     dedicatoria:
-      "Metidos en el agua, de noche, tú con esa risa y yo pegado a ti. Si pudiera vivir en un momento, elegiría uno parecido a este.",
+      "Metidos en el agua, de noche, usted con esa risa y yo pegadito. Si pudiera vivir en un momento, elegiría uno parecido a este.",
     alt: "Los dos dentro de una piscina de aguas termales de noche",
     fecha:"Papallacta"
   },
@@ -146,15 +146,15 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_4529.jpg",
     titulo: "Cien por ciento buenas vibras",
     dedicatoria:
-      "Lo decía el espejo y tenía razón. Tú eres mi cien por ciento.",
+      "Lo decía el espejo y tenía razón. Usted es mi cien por ciento.",
     alt: "Los dos reflejados en un espejo decorado con la frase 100% good vibes",
   },
   {
     id: "ventana",
     src: "fotos/img_4554.jpg",
-    titulo: "Tú, la ciudad y una vela",
+    titulo: "Usted, la ciudad y una vela",
     dedicatoria:
-      "Te tomé esta sin que te dieras cuenta. La ciudad entera atrás y tú, sin hacer nada, siendo lo más lindo del cuadro.",
+      "Le tomé esta sin que se diera cuenta. La ciudad entera atrás y usted, sin hacer nada, siendo lo más lindo del cuadro.",
     alt: "Ella sentada junto a una ventana con vista a la ciudad y un cóctel",
   },
   {
@@ -180,15 +180,15 @@ export const memories: readonly Memory[] = [
     src: "fotos/img_4716.jpg",
     titulo: "La misma vista, la misma risa",
     dedicatoria:
-      "Ya me había dado el beso y seguía sonriendo así. Contigo la sonrisa no se va: se queda.",
+      "Ya me había dado el beso y seguía sonriendo así. Con usted la sonrisa no se va: se queda.",
     alt: "Los dos sonriendo en el mismo mirador con el valle detrás",
   },
   {
     id: "hoy",
     src: "fotos/img_4827.jpg",
-    titulo: "Y mírate hoy",
+    titulo: "Y mírese hoy",
     dedicatoria:
-      "Amo la manera en la que siempre me miras, me siento vivo contigo.",
+      "Amo la manera en la que siempre me mira, me siento vivo con usted.",
     alt: "Los dos juntos en un mirador al atardecer con la ciudad al fondo",
     fecha: "lo que viene es todavía mejor",
   },
